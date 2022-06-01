@@ -25,6 +25,7 @@ class AboutUs extends Component{
                                 </div>
                             </div>
                             <div className={styles.about_container_section_1_col_2}>
+                                <div className={styles.circle2}></div>
                                 <p>
                                     Our tools are easy to set up  and  with a user friendly
                                     dashboard that enables you to set up, launch, automate and
@@ -40,10 +41,11 @@ class AboutUs extends Component{
                         </div>
                         <div className={styles.about_container_section_3}>
                             <div className={styles.about_container_section_3_col_2}>
-                                <p className={styles.about_container_section_3_col_1_text_p}>
+                                <div className={styles.about_container_section_3_col_1_text_p}>
+                                    <p>01</p>
                                     <span></span>
                                     Why Us
-                                </p>
+                                </div>
                                 <p>
                                     Our tools are easy to set up  and  with a user friendly
                                     dashboard that enables you to set up, launch, automate and
@@ -53,10 +55,11 @@ class AboutUs extends Component{
                             <div className={styles.about_container_section_3_col_1}>
                                 <div className={styles.about_container_section_3_col_1_box}></div>
                                 <div className={styles.about_container_section_3_col_1_text}>
-                                    <p className={styles.about_container_section_3_col_1_text_p}>
+                                    <div className={styles.about_container_section_3_col_1_text_p}>
+                                        <p>02</p>
                                         <span></span>
                                         Growing With You
-                                    </p>
+                                    </div>
                                     <div className={styles.about_container_section_3_col_1_p}>
                                         <p>
                                             Our tools are easy to set up  and  with a user friendly
