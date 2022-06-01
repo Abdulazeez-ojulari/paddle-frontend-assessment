@@ -22,7 +22,7 @@ class GitHub extends Component{
     getdays(date){
         let date_1 = new Date(date);
         let date_2 = new Date();
-        let difference = date_1.getTime() - date_2.getTime();
+        let difference =  date_2.getTime() - date_1.getTime();
         let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
         return TotalDays;
     }
@@ -55,7 +55,7 @@ class GitHub extends Component{
 
     render(){
 
-        const { repos } = this.state;
+        const { repos, page } = this.state;
 
         const reposDetail = repos.map((repo) => {
         return (
@@ -69,7 +69,7 @@ class GitHub extends Component{
                     <div className={styles.github_repo_more}>
                         <p className={styles.github_repo_stars}>Stars: {repo.stargazers_count}</p>
                         <p className={styles.github_repo_issues}>Issues: {repo.open_issues}</p>
-                        <p className={styles.github_repo_time}>Submitted {this.getdays(repo.owner.login)} days ago by {repo.name}</p>
+                        <p className={styles.github_repo_time}>Submitted {this.getdays(repo.created_at)} days ago by {repo.owner.login}</p>
                     </div>
                 </div>
             </div>
@@ -109,6 +109,9 @@ class GitHub extends Component{
                         <div className={styles.github_repos}>
                             {reposDetail}
                         </div>
+                    </div>
+                    <div className={styles.github_footer}>
+                        <h6>Page {page}</h6>
                     </div>
 
                 </div>
