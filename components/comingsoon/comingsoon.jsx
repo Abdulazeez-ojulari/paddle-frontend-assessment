@@ -24,7 +24,7 @@ class ComingSoon extends Component{
 
         return(
             <div className={styles.container}>
-                <div className={styles.col_1}>
+                <div style={contact ? {filter: 'blur(3px)', color:"red"} : {}} className={styles.col_1}>
                     <Navbar logo="white" aboutColour="white" blog="white" contactColor="white" contactBackColor="#271ac1" toggleContact={this.toggleContact}></Navbar>
                     <div className={styles.comingsoon_container}>
                         <h3 className={styles.comingsoon_container_h3}>
