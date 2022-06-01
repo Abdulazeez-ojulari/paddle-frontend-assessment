@@ -25,7 +25,7 @@ class ComingSoon extends Component{
         return(
             <div className={styles.container}>
                 <div className={styles.col_1}>
-                    <Navbar toggleContact={this.toggleContact}></Navbar>
+                    <Navbar logo="white" aboutColour="white" blog="white" contactColor="white" contactBackColor="#271ac1" toggleContact={this.toggleContact}></Navbar>
                     <div className={styles.comingsoon_container}>
                         <h3 className={styles.comingsoon_container_h3}>
                             Something awesome is coming soon
@@ -74,12 +74,12 @@ class ComingSoon extends Component{
                             </div>
                         </div>
                     </div>
-                    <Footer></Footer>
+                    <Footer active='white'></Footer>
+                    <div className={styles.circle4}></div>
                 </div>
                 <div className={styles.circle1}></div>
                 <div className={styles.circle2}></div>
                 <div className={styles.circle3}></div>
-                <div className={styles.circle4}></div>
                 {contact &&
                 <Contact toggleContact={this.toggleContact}></Contact>}
             </div>

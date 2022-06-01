@@ -7,7 +7,7 @@ class Footer extends Component{
         return(
             <div className="footer">
                 <div className="footer-social-links">
-                    <a href="#">
+                    <a style={{color: this.props.active }} href="#">
                         <span className="iconify footer-social-link" data-icon="entypo-social:youtube"></span>
                     </a>
                     <a href="#">

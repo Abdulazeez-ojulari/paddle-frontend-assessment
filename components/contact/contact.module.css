@@ -5,7 +5,18 @@
     position: fixed;
     grid-template-columns: 1fr 1fr;
     z-index: 1000;
+    transition: all 5s;
+    animation: fadein 1s ease-in-out;
 }
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 .contact_container_col_1{
     background-color: #23133d;

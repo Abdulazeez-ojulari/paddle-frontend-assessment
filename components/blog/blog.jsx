@@ -9,7 +9,7 @@ class Blog extends Component{
         return(
             <div className={styles.container}>
                 <div className={styles.col_1}>
-                    <Navbar></Navbar>
+                    <Navbar logo="black" backgroundColor="white" aboutColour="black" blog="#fe23f7" contactColor="black" contactBackColor="white"></Navbar>
                     <div className={styles.blog_container}>
                         <div className={styles.blog_container_section_1}>
                             <div className={styles.blog_container_section_1_col_1}>
@@ -248,7 +248,7 @@ class Blog extends Component{
                             </div>
                         </div>
                     </div>
-                    <Footer></Footer>
+                    <Footer active='black'></Footer>
                 </div>
                 {/* <div className={styles.circle1}></div>
                 <div className={styles.circle2}></div>
