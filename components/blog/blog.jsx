@@ -243,7 +243,9 @@ class Blog extends Component{
                                         <span className="iconify footer-social-link" data-icon="bi:arrow-right"></span>
                                     </p>
                                 </div>
-                                <div className={styles.blog_container_section_6_col_1_box}></div>
+                                <div className={styles.blog_container_section_6_col_1_box}>
+                                    <div className={styles.blog_container_section_6_col_1_box_box}></div>
+                                </div>
                                 
                             </div>
                         </div>
