@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +21,57 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@font-face {
+  font-family: "FS Meridian Regular";
+  src: url("../components/fonts/fsmeridian/FSMeridian-Regular.woff");
+  src:
+  url("../components/fonts/fsmeridian/FSMeridian-Regular.woff"),
+}
+
+@font-face {
+  font-family: "FS Meridian Bold";
+  src: url("../components/fonts/fsmeridian/FSMeridian-Bold.eot");
+  src:
+  url("../components/fonts/fsmeridian/FSMeridian-Bold.eot"),
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../components/fonts/Roboto/Roboto-Light.ttf");
+  src:
+  url("../components/fonts/Roboto/Roboto-Light.ttf"),
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../components/fonts/Roboto/Roboto-Bold.ttf");
+  src:
+  url("../components/fonts/Roboto/Roboto-Medium.ttf"),
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../components/fonts/Helvetica-Font/Helvetica-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../components/fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../components/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../components/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: url("../components/fonts/Montserrat/Montserrat-SemiBold.ttf");
 }

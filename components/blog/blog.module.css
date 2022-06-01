@@ -1,0 +1,407 @@
+.container{
+    display: grid;
+    height: 100vh;
+    position: relative;
+}
+
+.col_1{
+    display: grid;
+    grid-template-rows: max-content max-content 9rem;
+    grid-gap: 5rem;
+    justify-items: center;
+    background-color: #200043;
+    background-image: linear-gradient(to bottom, #1f0042, #0c0123);
+}
+
+.blog_container{
+    display: grid;
+    grid-gap: 4rem;
+    width: 100%;
+}
+
+.blog_container_section_1{
+    background-image: linear-gradient(to right, #1f0042, #0c0123);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5rem;
+}
+
+.blog_container_section_1_col_1{
+    width: 100%;
+    height: 20rem;
+    /* background-color: #311254; */
+    display: grid;
+    background-image: linear-gradient(to bottom, #331257, #1f1337);
+    align-items: center;
+}
+
+.blog_container_section_1_col_1_box{
+    position: absolute;
+}
+
+.blog_container_section_1_col_1_text{
+    display: grid;
+    grid-gap: 1rem;
+    justify-self: end;
+    margin-right: -10rem;
+}
+
+.blog_container_section_1_col_1_text_p{
+    font-size: 13px;
+    font-family: "Montserrat Regular";
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+    margin-left: -4rem;
+}
+
+.blog_container_section_1_col_1_text_p > span{
+    width: 3rem;
+    height: 1px;
+    background-color: white;
+}
+
+.blog_container_section_1_col_1_text_h3{
+    font-size: 30px;
+    font-family: "Montserrat SemiBold";
+    color: white;
+    line-height: 35px;
+}
+
+.blog_container_section_1_col_2{
+    align-self: end;
+    margin-right: 6rem;
+}
+
+.blog_container_section_1_col_2 > p{
+    font-size: 18px;
+    font-family: "Montserrat Regular";
+    color: white;
+    line-height: 40px;
+}
+
+.blog_container_section_2{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    line-height: 40px;
+    width: 90%;
+    justify-self: center;
+}
+
+.blog_container_section_2_col_1{
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.blog_container_section_2_col_1 >h3 {
+    font-size: 30px;
+    font-family: "Montserrat SemiBold";
+    color: white;
+    text-transform: capitalize;
+}
+
+.blog_container_section_2_col_1 > p{
+    font-size: 17px;
+    font-family: "Montserrat Regular";
+    color: white;
+}
+
+.blog_container_section_2_col_2{
+    align-self: end;
+    justify-self: center;
+    width: 70%;
+}
+
+
+.email_box {
+    display: grid;
+    align-items: center;
+    /* width: 70%;
+    height: 32px; */
+    background: transparent;
+    border: 1px solid #8c8c8c;
+    border-radius: 30px;
+    grid-auto-flow: column;
+    /* justify-content: start; */
+    padding: 1.1rem 1.5rem;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr max-content;
+}
+
+.email_input {
+    font-family: Montserrat Medium;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: .5px;
+    color: #8c8c8c;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.email_input::placeholder{
+    color: #8c8c8c;
+}
+
+.search_icon {
+    font-size: 40px;
+    color: #331257
+}
+
+.submit{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    background-color: #271ac1;
+    padding: 1.4rem 1.5rem;
+    border-radius: 30px;
+    font-family: "FS Meridian Regular";
+    text-transform: uppercase;
+    border: none;
+    width: max-content;
+    justify-self: end;
+    margin-right: -4px;
+}
+
+.blog_container_section_3{
+    width: 90%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill,514px);
+    grid-gap: 2rem;
+}
+
+.blog_container_section_3_col{
+    box-shadow: 0 4px 24px rgb(0 0 0 / 50%);
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 11px;
+    align-content: start;
+}
+
+.blog_container_section_3_col_img{
+    width: 100%;
+    height: 13rem;
+}
+
+.blog_container_section_3_col_date{
+    font-size: 9px;
+    font-family: "Montserrat Regular";
+    color: #abadb0;
+    text-transform: uppercase;
+}
+
+.blog_container_section_3_col_heading{
+    font-size: 19px;
+    font-family: "Montserrat SemiBold";
+    color: black;
+    text-transform: capitalize;
+    line-height: 33px;
+}
+
+.blog_container_section_3_col_content{
+    font-size: 14px;
+    font-family: "Montserrat Regular";
+    color: #565960;
+    line-height: 27px;
+}
+
+.blog_container_section_3_col_read_more{
+    font-size: 13px;
+    font-family: "Montserrat SemiBold";
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+    color: #ff00f7;
+}
+
+.blog_container_section_3_col_read_more > span{
+    width: 4rem;
+    height: 2px;
+    background-color: #ff00f7;
+}
+
+.blog_container_section_4{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    line-height: 40px;
+    width: 90%;
+    justify-self: center;
+}
+
+.blog_container_section_4_col_1{
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.blog_container_section_4_col_1 >h3 {
+    font-size: 30px;
+    font-family: "Montserrat SemiBold";
+    color: white;
+    text-transform: capitalize;
+}
+
+.blog_container_section_4_col_1 > p{
+    font-size: 17px;
+    font-family: "Montserrat Regular";
+    color: white;
+}
+
+.blog_container_section_5{
+    width: 90%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill,285px);
+    grid-gap: 2rem;
+}
+
+.blog_container_section_5_col{
+    box-shadow: 0 4px 24px rgb(0 0 0 / 50%);
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 11px;
+    align-content: start;
+}
+
+.blog_container_section_5_col_img{
+    width: 100%;
+    height: 13rem;
+}
+
+.blog_container_section_5_col_date{
+    font-size: 9px;
+    font-family: "Montserrat Regular";
+    color: #abadb0;
+    text-transform: uppercase;
+}
+
+.blog_container_section_5_col_heading{
+    font-size: 19px;
+    font-family: "Montserrat SemiBold";
+    color: black;
+    text-transform: capitalize;
+    line-height: 33px;
+}
+
+.blog_container_section_5_col_content{
+    font-size: 14px;
+    font-family: "Montserrat Regular";
+    color: #565960;
+    line-height: 27px;
+}
+
+.blog_container_section_5_col_read_more{
+    font-size: 13px;
+    font-family: "Montserrat SemiBold";
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+    color: #ff00f7;
+}
+
+.blog_container_section_5_col_read_more > span{
+    width: 4rem;
+    height: 2px;
+    background-color: #ff00f7;
+}
+
+.load_more{
+    display: grid;
+    justify-items: center;
+}
+
+.load_more > button{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: #7c0fd5;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-family: "FS Meridian Regular";
+    text-transform: uppercase;
+}
+
+.blog_container_section_6{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.blog_container_section_6_col_1{
+    width: 100%;
+    height: 25rem;
+    background-image: linear-gradient(to bottom, #213e71, #19083c);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+}
+
+.blog_container_section_6_col_1_box{
+    position: relative;
+}
+
+.blog_container_section_6_col_1_text{
+    display: grid;
+    grid-gap: 1rem;
+    justify-self: center;
+    grid-gap: 4px;
+}
+
+.blog_container_section_6_col_1_text_p{
+    font-size: 16px;
+    font-family: "Montserrat SemiBold";
+    color: #ff00f7;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.blog_container_h3 {
+    width: 100%;
+    font-size: 33px;
+    color: white;
+    font-family: "Montserrat SemiBold";
+    line-height: 65px;
+}
+
+.blog_container_section_6_col_1_text_p > span{
+    width: 6rem;
+    height: 3px;
+    background-color: white;
+}
+
+.blog_container_section_6_col_1_p{
+    display: grid;
+    grid-gap: 2rem;
+}
+
+.blog_container_section_6_col_1_p > p{
+    font-size: 18px;
+    font-family: "Montserrat Regular";
+    color: white;
+    line-height: 40px;
+}
+
+.blog_container_section_6_col_1_text_h3{
+    font-size: 76px;
+    font-family: "Montserrat SemiBold";
+    color: white;
+    line-height: 80px;
+}

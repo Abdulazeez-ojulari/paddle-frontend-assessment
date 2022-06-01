@@ -1,0 +1,222 @@
+.container{
+    display: grid;
+    height: 100vh;
+    position: relative;
+}
+
+.circle1{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    opacity: 0.8;
+    background-image: linear-gradient(to bottom, #7d1e7a, #0c0123);
+}
+
+.circle2{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 24rem;
+    right: 20%;
+    opacity: 0.8;
+    background-image: linear-gradient(to bottom, #213e71, #0c0123);
+}
+
+.circle3{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 54rem;
+    left: 25%;
+    opacity: 0.8;
+    background-image: linear-gradient(to bottom, #7e4029, #0c0123);
+}
+
+.circle4{
+    width: 80%;
+    height: 60rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 58rem;
+    left: 10%;
+    opacity: 0.8;
+    background-color: #211539;
+    opacity: 0.6;
+    border: 1px solid #fff;
+    background-image: linear-gradient(to bottom, #211539, white);
+}
+
+.col_1{
+    display: grid;
+    grid-template-rows: max-content 1fr 9rem;
+    grid-gap: 5rem;
+    justify-items: center;
+    background-color: #200043;
+    background-image: linear-gradient(to bottom, #1f0042, #0c0123);
+}
+
+.comingsoon_container{
+    width: 752px;
+    display: grid;
+    grid-gap: 2.5rem;
+    align-content: start;
+    justify-items: center;
+    margin-bottom: 9rem;
+
+}
+
+.comingsoon_container_h3{
+    font-size: 46px;
+    color: white;
+    font-family: "Montserrat SemiBold";
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 65px;
+}
+
+.comingsoon_container_p{
+    text-align: center;
+    font-size: 16px;
+    color: #dbd7e0;
+    font-family: "Montserrat Regular";
+    width: 85%;
+    line-height: 33px;
+}
+
+.comingsoon_time_container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.comingsoon_time_col{
+    width: 7rem;
+    height: 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.comingsoon_time_col > h3{
+    text-align: center;
+    font-size: 35px;
+    font-family: "Roboto";
+    color: black;
+}
+
+.comingsoon_time_col > p{
+    text-align: center;
+    font-size: 18px;
+    font-family: "Montserrat Medium";
+    color: black;
+}
+
+.comingsoon_form_col_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: start;
+}
+
+.comingsoon_form_group{
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.comingsoon_form_label{
+    font-family: "Montserrat Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    
+    letter-spacing: 0.5px;
+    
+    color: #2B2B2B;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.comingsoon_form_label > p{
+    font-size: 12px;
+    color: #064a61;
+}
+
+.comingsoon_form_input{
+    font-family: "Montserrat Medium";
+    height: 38px;
+    padding: 1rem;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #473a5d;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.comingsoon_form_col_1{
+    width: 80%;
+}
+
+.email_box {
+    display: grid;
+    align-items: center;
+    /* width: 70%;
+    height: 32px; */
+    background: #f5f6f4;
+    border-radius: 30px;
+    grid-auto-flow: column;
+    /* justify-content: start; */
+    padding-left: 2.5rem;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr max-content;
+}
+
+.email_input {
+    font-family: Montserrat Medium;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: .5px;
+    color: #222321;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.email_input::placeholder{
+    color: black;
+}
+
+.submit{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    background-color: #271ac1;
+    padding: 1.4rem 1.5rem;
+    border-radius: 30px;
+    font-family: "FS Meridian Regular";
+    text-transform: uppercase;
+    border: none;
+    width: max-content;
+    justify-self: end;
+    margin-right: -4px;
+}
+
+@media screen and (max-width: 980px) {
+    .col_1{
+        grid-gap: 0;
+    }
+}

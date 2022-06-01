@@ -1,0 +1,64 @@
+.container{
+    display: grid;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    padding: 3rem 0;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.navbar-h3{
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-links{
+    display: grid;
+    grid-gap: 4rem;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.navbar-link{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-family: "FS Meridian Regular";
+    text-transform: uppercase;
+}
+
+.navbar-link-button{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: #271ac1;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-family: "FS Meridian Regular";
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 980px) {
+    .col-1{
+        grid-gap: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .navbar{
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar{
+        padding: 2rem 1rem;
+    }
+}
