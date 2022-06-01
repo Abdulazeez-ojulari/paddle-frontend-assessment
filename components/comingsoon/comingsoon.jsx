@@ -1,15 +1,31 @@
 import { Component } from "react";
+import Contact from "../contact/contact";
 import Footer from "../global/footer/footer";
 import Navbar from "../global/navbar/navbar";
 import styles from './comingSoon.module.css';
 
 class ComingSoon extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+          contact: false,
+        };
+    }
+
+    toggleContact = () => {
+        this.setState({
+            contact: !this.state.contact
+        })
+    }
     
     render(){
+
+        const { contact } = this.state
+
         return(
             <div className={styles.container}>
                 <div className={styles.col_1}>
-                    <Navbar></Navbar>
+                    <Navbar toggleContact={this.toggleContact}></Navbar>
                     <div className={styles.comingsoon_container}>
                         <h3 className={styles.comingsoon_container_h3}>
                             Something awesome is coming soon
@@ -64,6 +80,8 @@ class ComingSoon extends Component{
                 <div className={styles.circle2}></div>
                 <div className={styles.circle3}></div>
                 <div className={styles.circle4}></div>
+                {contact &&
+                <Contact toggleContact={this.toggleContact}></Contact>}
             </div>
         )
     }

@@ -1,0 +1,128 @@
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1000;
+}
+
+.contact_container_col_1{
+    background-color: #23133d;
+    opacity: 0.94;
+}
+
+.contact_container_col_2{
+    display: grid;
+    background-color: #1d003f;
+    justify-items: center;
+    position: relative;
+}
+
+.contact_container_arrow{
+    position: absolute;
+    top: 5%;
+    left: -4.5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.arrow{
+    font-size: 29px;
+    font-family: "Montserrat SemiBold";
+    color: #271ac1;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.contact_container_form{
+    display: grid;
+    grid-gap: 2rem;
+    background-color: #1d003f;
+    align-content: center;
+    width: 70%;
+    margin-right: 5rem;
+}
+
+.contact_form_group{
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.contact_form_label{
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    
+    letter-spacing: 0.5px;
+    
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.contact_form_label > p{
+    font-size: 12px;
+    color: #064a61;
+}
+
+.contact_form_input{
+    font-family: "Montserrat Medium";
+    height: 38px;
+    padding: 1rem 2rem;
+    outline: none;
+    height: 75px;
+    background: white;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.contact_form_textarea{
+    font-family: "Montserrat Medium";
+    height: 38px;
+    padding: 1rem 2rem;
+    outline: none;
+    height: 150px;
+    background: white;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.contact_container_form_h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Montserrat SemiBold";
+    color: white;
+}
+
+.load_more{
+    display: grid;
+    justify-items: start;
+}
+
+.load_more > button{
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: #271ac1;
+    padding: 1.5rem 3rem;
+    border-radius: 35px;
+    font-family: "FS Meridian Regular";
+    text-transform: uppercase;
+}

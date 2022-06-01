@@ -11,7 +11,7 @@ class Navbar extends Component{
                 <div className="navbar-links">
                     <a href="/about" className="navbar-link">About Us</a>
                     <a href="/blog" className="navbar-link support">Blog</a>
-                    <a href="/contact" className="navbar-link-button support">Contact Us</a>
+                    <a href="#" onClick={this.props.toggleContact} className="navbar-link-button support">Contact Us</a>
                 </div>
             </div>
         )

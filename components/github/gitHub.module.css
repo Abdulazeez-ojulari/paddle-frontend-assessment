@@ -1,0 +1,141 @@
+.container{
+    display: grid;
+    height: 100vh;
+    position: relative;
+}
+
+.col{
+    display: grid;
+    grid-template-rows: max-content 1fr 9rem;
+    grid-gap: 5rem;
+    justify-items: center;
+}
+
+.github_header{
+    display: grid;
+    grid-gap: 4px;
+    width: 100%;
+    justify-items: center;
+    height: 5rem;
+    background-color: #c1c1c1;
+}
+
+.github_header >h6{
+    text-align: center;
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.github_header >div{
+    display: flex;
+    width: 90%;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.github_header_arrow{
+    display: flex;
+    grid-gap: 1rem;
+}
+
+.github_header_icon{
+    font-size: 27px;
+    color: #ffffff;
+}
+
+.github_header_arrow_search_box{
+    width: 100%;
+    background-color: white;
+    height: 26px;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+.github_header_arrow_search_input{
+    width: 15%;
+    background-color: white;
+    height: 26px;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+.github_body_container{
+    display: grid;
+    align-items: start;
+    grid-gap: 1rem;
+    width: 95vw;
+}
+
+.github_repos{
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.github_repo{
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    grid-gap: 2rem;
+}
+
+.github_repo_col_1{
+    width: 100%;
+}
+
+.github_repo_avatar{
+    height: 6rem;
+    width: 100%;
+}
+
+.github_repo_col_2{
+    display: grid;
+    align-content: space-between;
+}
+
+.github_repo_name{
+    font-family: "Montserrat SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.github_repo_description{
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.github_repo_more{
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.github_repo_stars{
+    border: 2px solid;
+    padding: 4px;
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.github_repo_issues{
+    border: 2px solid;
+    padding: 4px;
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.github_repo_time{
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
