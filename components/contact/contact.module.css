@@ -6,6 +6,7 @@
     grid-template-columns: 1fr 1fr;
     z-index: 1000;
     transition: all 5s;
+    overflow-y: scroll;
     animation: fadein 1s ease-in-out;
 }
 
@@ -59,6 +60,7 @@
     background-color: #1d003f;
     align-content: center;
     width: 70%;
+    margin: 2rem 0;
     margin-right: 5rem;
 }
 
@@ -136,4 +138,34 @@
     border-radius: 35px;
     font-family: "FS Meridian Regular";
     text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .container{
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .contact_container_form{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact_container_form{
+        width: 85%;
+    }
+
+    .contact_container_arrow{
+        left: -5.5%;
+    }
+
+    .contact_container_form_h3{
+        font-size: 22px;
+    }
 }
