@@ -286,3 +286,111 @@
     color: white;
     line-height: 80px;
 }
+
+
+@media screen and (max-width: 1100px) {
+    .about_container_section_1{
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+    }
+
+    .about_container_section_1_col_1{
+        width: 50%;
+        height: 28rem;
+    }
+
+    .about_container_section_1_col_1_text{
+        grid-gap: 0rem;
+        margin-top: 0rem;
+        margin-right: -13rem;
+        width: 24rem;
+    }
+
+    .about_container_section_1_col_1_text_h3{
+        font-size: 43px;
+        line-height: 53px;
+    }
+
+    .about_container_section_1_col_2{
+        margin-right: 0rem;
+        width: 50%;
+        justify-self: end;
+    }
+}
+
+
+@media screen and (max-width: 970px) {
+    .about_container_section_3{
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        justify-items: center;
+    }
+
+    .about_container_section_3_col_2{
+        margin: 0;
+        width: 95%;
+    }
+
+    .about_container_section_3_col_1{
+        height: 29rem;
+    }
+
+    .about_container_section_3_col_1_text{
+        width: 95%;
+        margin: 0;
+        grid-gap: 1rem;
+        justify-self: center;
+    }
+
+    .about_container_section_4_col_1{
+        grid-template-columns: 1fr;
+        justify-self: start;
+    }
+
+    .about_container_section_4_col_1_text{
+        justify-self: center;
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .about_container{
+        grid-gap: 3rem;
+    }
+
+    .about_container_h3{
+        font-size: 29px;
+        width: 95%;
+        line-height: 45px;
+    }
+
+    .col_1{
+        grid-gap: 1rem;
+    }
+
+    .circle2{
+        width: 9rem;
+        height: 9rem;
+        top: 27rem;
+    }
+
+    .about_container_section_1_col_2{
+        width: 95%;
+        justify-self: center;
+    }
+
+    .about_container_section_1_col_1{
+        width: 100%;
+    }
+
+    .about_container_section_1_col_1_text{
+        width: 95%;
+        justify-self: center;
+        margin: 0;
+    }
+
+    .about_container_section_1_col_1_text_p{
+        margin-left: 0;
+    }
+}
