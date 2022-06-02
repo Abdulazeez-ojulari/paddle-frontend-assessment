@@ -69,6 +69,7 @@
     align-content: start;
     justify-items: center;
     margin-bottom: 9rem;
+    z-index: 4;
 
 }
 
@@ -220,5 +221,60 @@
 @media screen and (max-width: 980px) {
     .col_1{
         grid-gap: 0;
+    }
+
+    .circle4{
+        width: 100%;
+        top: 60rem;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .comingsoon_container{
+        width: 95%;
+        justify-content: center;
+    }
+
+    .circle4{
+        height: 35rem;
+    }    
+}
+
+@media screen and (max-width: 580px) {
+    .comingsoon_time_col{
+        width: 100%;
+        height: 7rem;
+    }
+
+    .comingsoon_time_container{
+        width: 95%;
+        justify-content: center;
+    }
+
+    .comingsoon_time_col > h3{
+        font-size: 30px;
+    }  
+
+    .comingsoon_time_col > p {
+        font-size: 16px;
+    }
+
+    .comingsoon_form_col_1{
+        width: 95%;
+    }
+
+    .comingsoon_form_col_2{
+        grid-gap: 4px;
+    }
+
+    .email_box{
+        padding-left: 1rem;
+        grid-gap: 1rem;
+    }
+
+    .submit{
+        padding: 1rem;
+        font-size: 12px;
     }
 }

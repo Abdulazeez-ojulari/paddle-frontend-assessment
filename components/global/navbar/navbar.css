@@ -8,6 +8,7 @@
     padding: 3rem;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
 .navbar-h3{
@@ -54,7 +55,20 @@
 @media screen and (max-width: 800px) {
 
     .navbar{
-        padding: 3rem 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .navbar-links{
+        grid-gap: 1rem;
+    }
+
+    .navbar-link-button{
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .navbar-link{
+        font-size: 14px;
     }
 }
 
