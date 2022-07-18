@@ -1,6 +1,8 @@
 import axios from "axios";
 import { Component } from "react";
 import styles from '../../components/github/gitHub.module.css';
+import Link from 'next/link'
+import Image from "next/image";
 
 class GitHub extends Component{
 
@@ -57,11 +59,12 @@ class GitHub extends Component{
 
         const { repos, page } = this.state;
 
-        const reposDetail = repos.map((repo) => {
+        const reposDetail = repos.map((repo, index) => {
         return (
-            <div className={styles.github_repo}>
+            <div key={index} className={styles.github_repo}>
                 <div className={styles.github_repo_col_1}>
-                    <img src={repo.owner.avatar_url} className={styles.github_repo_avatar} />
+                    <Image width={500} height={500} alt="Repo owner" src={repo.owner.avatar_url} className={styles.github_repo_avatar} ></Image>
+                    
                 </div>
                 <div className={styles.github_repo_col_2}>
                     <h3 className={styles.github_repo_name}>{repo.name}</h3>
@@ -92,9 +95,11 @@ class GitHub extends Component{
                                 <p className={styles.github_header_icon}>
                                     <span className={"iconify" + " " + styles.arrow} data-icon="bi:x"></span>
                                 </p>
-                                <a href="/" className={styles.github_header_icon}>
-                                    <span className={"iconify" + " " + styles.arrow} data-icon="carbon:home"></span>
-                                </a>
+                                <Link href="/" >
+                                    <a className={styles.github_header_icon}>
+                                        <span className={"iconify" + " " + styles.arrow} data-icon="carbon:home"></span>
+                                    </a>
+                                </Link>
                             </div>
                             <div className={styles.github_header_arrow_search_box}>
 

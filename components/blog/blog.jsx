@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Component } from "react";
 import Footer from "../global/footer/footer";
 import Navbar from "../global/navbar/navbar";
@@ -30,7 +31,7 @@ class Blog extends Component{
                                 <h3>Latest from the blog</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                             </div>
@@ -52,7 +53,7 @@ class Blog extends Component{
 
                         <div className={styles.blog_container_section_3}>
                             <div className={styles.blog_container_section_3_col}>
-                                <img src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} />
+                                <Image width={500} height={500} src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} ></Image>
                                 <p className={styles.blog_container_section_3_col_date}>
                                     September 6, 2021 . Featured Article . Affiliate
                                 </p>
@@ -61,7 +62,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_3_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_3_col_read_more}>
@@ -70,7 +71,7 @@ class Blog extends Component{
                                 </p>
                             </div>
                             <div className={styles.blog_container_section_3_col}>
-                                <img src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} />
+                                <Image width={500} height={500} src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} ></Image>
                                 <p className={styles.blog_container_section_3_col_date}>
                                     September 6, 2021 . Featured Article . Affiliate
                                 </p>
@@ -79,7 +80,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_3_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_3_col_read_more}>
@@ -88,7 +89,8 @@ class Blog extends Component{
                                 </p>
                             </div>
                             <div className={styles.blog_container_section_3_col}>
-                                <img src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} />
+                                <Image width={500} height={500} src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} ></Image>
+                                {/* <img /> */}
                                 <p className={styles.blog_container_section_3_col_date}>
                                     September 6, 2021 . Featured Article . Affiliate
                                 </p>
@@ -97,7 +99,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_3_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_3_col_read_more}>
@@ -106,7 +108,8 @@ class Blog extends Component{
                                 </p>
                             </div>
                             <div className={styles.blog_container_section_3_col}>
-                                <img src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} />
+                                <Image width={500} height={500} src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} ></Image>
+                                {/* <Image width={500} height={500} src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} ></Image> */}
                                 <p className={styles.blog_container_section_3_col_date}>
                                     September 6, 2021 . Featured Article . Affiliate
                                 </p>
@@ -115,7 +118,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_3_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_3_col_read_more}>
@@ -124,7 +127,7 @@ class Blog extends Component{
                                 </p>
                             </div>
                             <div className={styles.blog_container_section_3_col}>
-                                <img src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} />
+                                <Image width={500} height={500} src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} ></Image>
                                 <p className={styles.blog_container_section_3_col_date}>
                                     September 6, 2021 . Featured Article . Affiliate
                                 </p>
@@ -133,7 +136,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_3_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_3_col_read_more}>
@@ -142,7 +145,8 @@ class Blog extends Component{
                                 </p>
                             </div>
                             <div className={styles.blog_container_section_3_col}>
-                                <img src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img} />
+                                <Image width={500} height={500} src="/images/blog-img.png" alt="blog img" className={styles.blog_container_section_3_col_img}></Image>
+                                {/* <img  /> */}
                                 <p className={styles.blog_container_section_3_col_date}>
                                     September 6, 2021 . Featured Article . Affiliate
                                 </p>
@@ -151,7 +155,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_3_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_3_col_read_more}>
@@ -165,7 +169,7 @@ class Blog extends Component{
                                 <h3>Recent Articles</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                             </div>
@@ -180,7 +184,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_5_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_5_col_read_more}>
@@ -197,7 +201,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_5_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_5_col_read_more}>
@@ -214,7 +218,7 @@ class Blog extends Component{
                                 </h3>
                                 <p className={styles.blog_container_section_5_col_content}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting 
-                                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                                    industry. Lorem Ipsum has been the industry&apos;s standard dummy text 
                                     ever since the 1500s,
                                 </p>
                                 <p className={styles.blog_container_section_5_col_read_more}>
