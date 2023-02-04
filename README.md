@@ -1,15 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Prerequisites
+
+* Node(npm)
+
 ## Getting Started
 
-First clone project
+* Clone project
+* Install packages and run the development server:
+    * Run `npm install`
+    * Run `npm run dev`
 
-Second, make sure you have npm installed on your machine
-
-Third, install packages and run the development server:
-
-* Run `npm install`.
-* Run `npm run dev`.
+## Test Application
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
